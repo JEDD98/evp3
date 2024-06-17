@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #conten{
+            color:  #5e5858;
+        }
+        #conten{
+            height: 600px;
+            display: grid;
+            grid-template-areas: "text text img"
+                                 "foto foto img";
+            gap: 10px;
+            color: #5e5858;
+        
+        }
+        #somos{
+            grid-area: text;
+        }
+        #foto{
+            grid-area: foto;
+            display: flex;
+            align-items: center ;
+            gap: 100px;
+            padding: 20px;
+        }
+        #foto img{
+            border: 3px solid #477e92;
+            padding: 2px;
+        }
+        #imgg{
+            grid-area: img;
+            border: 3px solid #477e92;
+            padding: 2px;
+        }
+        #nos{
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>L O U N G E B A R</h1>
+            <nav>
+                <ul id="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="video.html">Video</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="nos">
+            <h2>Nosotros</h2>
+        </div>
+        <div id="conten">
+         
+            <div id="somos">
+                <h2>¿Quienes somos?</h2>
+                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, blanditiis est! Neque possimus dolorem asperiores quae eveniet aliquam, consectetur cumque unde ipsum deleniti dolore nisi fugiat! Dolores, ut facere. Deserunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quo sint eum id itaque asperiores numquam, harum repellat voluptas nostrum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis autem quidem iste ratione, harum nam! Doloribus soluta cum enim deserunt sint distinctio totam voluptatibus sequi. Delectus enim libero amet dolores.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias numquam exercitationem quibusdam architecto possimus! Aliquid explicabo architecto amet dicta eius?</p>
+            </div>
+            <div id="foto">
+                <img src="https://www.cronista.com/files/image/455/455328/624722abe562d_700_491!.jpg?s=727feadc2f29554fbc8d341d2b5dd0e8&d=1648829101" width="200px">
+                <img src="https://www.cronista.com/files/image/455/455327/6247224d5aa41_700_387!.jpg?s=b6f7e4c05b2e128f40e16bb32adbfa0e&d=1648829006" width="250px">
+            </div>
+            <div id="imgg">
+                <img src="https://images.unsplash.com/photo-1592620352607-53100d32f9fb?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZXRpcXVldGElMjBuZWdyYXxlbnwwfHwwfHx8MA%3D%3D" width="300px" height="600px">
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

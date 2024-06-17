@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        td{
+            padding: 10px;
+        }
+        thead td{
+         
+            background-color: #553865;
+        }
+        input{
+            color: #5e5858;
+            width: 300px;
+        }
+        #exp{
+            height: 80px;
+        }
+        #contenedor{
+            border: 3px solid white ;
+            height: 1100px;
+            display: grid;
+            grid-template-areas: "cuadro cuadro form"
+                                 "mapa mapa mapa";
+            gap: 10px;
+            color: #9d7979;
+        }
+        #cuadro{
+            width: 400px;
+            grid-area: cuadro;
+            text-align: center;
+            margin-top: 100px;
+            margin-left: 100px;
+        }
+        #form{
+            margin: 100px;
+            margin-bottom: 0px;
+            grid-area: form;
+        }
+        #mapa{
+            grid-area: mapa;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>L O U N G E  B A R</h1>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main id="contenedor">
+       <div id="cuadro">
+        <h2>Informacion de contacto</h2>
+        <table border>
+            <thead>
+                <td>Direccion</td>
+                <td>Jr. Carabaya 522 - Lima PERU <br> Jr. Camana 758 - Lima Peru</td>
+            </thead>
+            <thead>
+                <td>Telefonos</td>
+                <td>983693927|976263829|8263882738</td>
+            </thead>
+            <thead>
+                <td>Email</td>
+                <td>info@bar.gmail</td>
+            </thead>
+            <p></p>
+            </table border>
+        </table>
+        <h2>Horario de atencion</h2>
+        <table border>
+            <th>
+                Area de ventas:<br>
+                Lunes a viernes de 8am a 6pm
+            </th>
+        </table>
+       </div>
+       <div id="form">
+        <h2>Dejanos tu comentario</h2>
+        <form action="" method="get">
+        <div>
+            Usuario <br> <input type="text" ><br><br>
+            Celular<br> <input type="number" name="" id=""><br><br>
+            Correo electronico <br><input type="email" name="" id=""><br><br>
+            RUC - Empresa (Opcional)<br> <input type="text"><br><br>
+            Mensaje <br><input type="text" name="" id="exp" placeholder="Detalla tu experiencia a continuacion">
+
+        </div>
+        </form>
+       </div>
+    <div id="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15607.431919112234!2d-77.04535801433532!3d-12.053291076163253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8c7c108b161%3A0x9513a67ee9c2879c!2sUrb%20Cercado%20de%20Lima%2C%20Lima!5e0!3m2!1ses-419!2spe!4v1718526492170!5m2!1ses-419!2spe" width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    </main>
+</body>
+</html>
